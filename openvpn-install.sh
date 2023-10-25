@@ -893,12 +893,23 @@ cert $SERVER_NAME.crt
 key $SERVER_NAME.key
 auth $HMAC_ALG
 cipher $CIPHER
-ncp-ciphers $CIPHER
+ncp-disable
 tls-server
 tls-version-min 1.2
 tls-cipher $CC_CIPHER
 client-config-dir /etc/openvpn/ccd
 status /var/log/openvpn/status.log
+#Custom
+hand-window 120
+fast-io
+sndbuf 0
+rcvbuf 0
+allow-pull-fqdn
+tcp-nodelay
+replay-window 256
+float
+duplicate-cn
+#close
 verb 3" >>/etc/openvpn/server.conf
 
 	# Create client-config-dir dir
@@ -1044,8 +1055,7 @@ cipher $CIPHER
 tls-client
 tls-version-min 1.2
 tls-cipher $CC_CIPHER
-ignore-unknown-option block-outside-dns
-setenv opt block-outside-dns # Prevent Windows 10 DNS leak
+auth-user-pass
 verb 3" >>/etc/openvpn/client-template.txt
 
 	if [[ $COMPRESSION_ENABLED == "y" ]]; then
