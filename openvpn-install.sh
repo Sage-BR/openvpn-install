@@ -1034,6 +1034,7 @@ WantedBy=multi-user.target" >/etc/systemd/system/iptables-openvpn.service
 	fi
 
 	# client-template.txt is created so we have a template to add further users later
+    echo "# OVPN_ACCESS_SERVER_PROFILE=[4TUNNEL]" >/etc/openvpn/client-template.txt
 	echo "client" >/etc/openvpn/client-template.txt
 	if [[ $PROTOCOL == 'udp' ]]; then
 		echo "proto udp" >>/etc/openvpn/client-template.txt
