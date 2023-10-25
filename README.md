@@ -1,7 +1,7 @@
 # openvpn-install
 
-![Test](https://github.com/angristan/openvpn-install/workflows/Test/badge.svg)
-![Lint](https://github.com/angristan/openvpn-install/workflows/Lint/badge.svg)
+![Test](https://github.com/SageSBR/openvpn-install/workflows/Test/badge.svg)
+![Lint](https://github.com/SageSBR/openvpn-install/workflows/Lint/badge.svg)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/angristan)
 
 OpenVPN installer for Debian, Ubuntu, Fedora, CentOS, Arch Linux, Oracle Linux, Rocky Linux and AlmaLinux.
@@ -15,7 +15,7 @@ You can also check out [wireguard-install](https://github.com/angristan/wireguar
 First, get the script and make it executable:
 
 ```bash
-curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
+curl -O https://raw.githubusercontent.com/SageSBR/openvpn-install/master/openvpn-install.sh
 chmod +x openvpn-install.sh
 ```
 
@@ -197,7 +197,7 @@ Please open an issue before submitting a PR if you want to discuss a change, esp
 
 ### Code formatting
 
-We use [shellcheck](https://github.com/koalaman/shellcheck) and [shfmt](https://github.com/mvdan/sh) to enforce bash styling guidelines and good practices. They are executed for each commit / PR with GitHub Actions, so you can check the configuration [here](https://github.com/angristan/openvpn-install/blob/master/.github/workflows/push.yml).
+We use [shellcheck](https://github.com/koalaman/shellcheck) and [shfmt](https://github.com/mvdan/sh) to enforce bash styling guidelines and good practices. They are executed for each commit / PR with GitHub Actions, so you can check the configuration [here](https://github.com/SageSBR/openvpn-install/blob/master/.github/workflows/push.yml).
 
 ## Security and Encryption
 
@@ -349,10 +349,10 @@ You can [say thanks](https://saythanks.io/to/angristan) if you want!
 
 ## Credits & Licence
 
-Many thanks to the [contributors](https://github.com/Angristan/OpenVPN-install/graphs/contributors) and Nyr's original work.
+Many thanks to the [contributors](https://github.com/SageSBR/openvpn-install/graphs/contributors) and Nyr's original work.
 
-This project is under the [MIT Licence](https://raw.githubusercontent.com/Angristan/openvpn-install/master/LICENSE)
+This project is under the [MIT Licence](https://raw.githubusercontent.com/SageSBR/openvpn-install/master/LICENSE)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=angristan/openvpn-install&type=Date)](https://star-history.com/#angristan/openvpn-install&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=SageSBR/openvpn-install&type=Date)](https://star-history.com/#SageSBR/openvpn-install&Date)
